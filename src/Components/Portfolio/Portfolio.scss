@@ -1,0 +1,108 @@
+@import '../../index.scss';
+
+.portfolio {
+    max-width: 100vw;
+    min-height: 70vh;
+    background: linear-gradient(180deg, $dark-purple 0%, $dark-purple 100%);
+    //margin-top: -1px;
+    color: white;
+    font-family: $primary-font;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: relative;
+    // border: 2px solid red;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h1 {
+            font-size: 8vw;
+            font-weight: 400;
+        }
+
+        img {
+            display: block;
+            width: 53%;
+            height: 30px;
+            object-fit: cover;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            // border : 1px solid white
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        // margin-right: auto;
+        height: 38vh;
+        //padding-bottom: 40px;
+        // position: relative;
+        // bottom: 4vh;
+        // padding-top: 50px;
+        // padding-bottom: 50px;
+        // border: 3px solid green;
+        //  display: flex;
+        //  justify-content: center;
+        //  align-items: center;
+    }
+
+    .swiper-slide {
+        //background-position: center;
+        // background-size: cover;
+        // width: 50px;
+        height: 40%;
+        //  width : 200px;
+        margin: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 50%;
+        // border: 1px solid red;
+
+        p {
+            display: none;
+        }
+    }
+
+    .swiper-slide-active {
+        // border: 3px solid orange;
+        height: 60%;
+        // width: 50%;
+        opacity: 100%;
+        background-color: transparent;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 75%;
+        height: 100%;
+        border-radius: 15px;
+        object-fit: contain;
+        // border : 1px solid green
+    }
+
+    .swiper-slide-active img {
+        width: 140%
+    }
+
+    .swiper-pagination-bullet {
+        margin-top: 50px !important;
+        background-color: white !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: white !important;
+    }
+
+    p {
+        // border: 2px solid white;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+}

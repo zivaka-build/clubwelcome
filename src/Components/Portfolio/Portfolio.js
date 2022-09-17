@@ -1,7 +1,6 @@
 import React from 'react'
-import Carousel from '../../assets/images/carousel.png';
-import './Hero.scss';
-import Header from '../Header/Header';
+import Leaf from '../../assets/images/leaf.png';
+import './Portfolio.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, Autoplay, Zoom } from 'swiper';
 import { EffectCoverflow } from 'swiper';
@@ -13,30 +12,33 @@ import 'swiper/scss/scrollbar';
 import 'swiper/scss/autoplay';
 import 'swiper/scss/zoom';
 import 'swiper/css/effect-coverflow';
-import Car2 from '../../assets/images/car2.jpeg';
-import Car1 from '../../assets/images/car1.jpeg';
-import Car3 from '../../assets/images/car3.jpeg';
-import Car4 from '../../assets/images/car4.jpeg';
+import p1 from '../../assets/images/p1.jpg';
+import p2 from '../../assets/images/p2.jpg';
+import p3 from '../../assets/images/p3.jpg';
+import p4 from '../../assets/images/p4.jpg';
 
-const Hero = ({open , setOpen}) => {
+const Portfolio = () => {
 
-    const images = [Car1 , Car2 , Car3 , Car4];
+    const images = [p1, p2, p3, p4];
 
     return (
-        <section className='hero'>
+        <div className='portfolio'>
 
-            <Header open={open} setOpen={setOpen}/>
-            <br />
+            <div className='heading'>
+                <h1>Portfolio</h1>
+                <img src={Leaf} alt=" a design" />
+            </div>
+
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
-                spaceBetween={-5}
+                spaceBetween={25}
                 slidesPerView={2}
 
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
                     dynamicMainBullets: 3,
-                   
+
                 }}
                 //scrollbar={{ draggable: true }}
                 //autoplay={{ delay: 2000, disableOnInteraction: false, }}
@@ -57,15 +59,17 @@ const Hero = ({open , setOpen}) => {
                     images.map((image, index) => {
                         return <SwiperSlide key={index}>
                             <img src={image} alt="" />
+                            {/* <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime commodi perspiciatis officia! Fuga, optio.</p> */}
                         </SwiperSlide>
                     })
                 }
 
             </Swiper>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat distinctio libero error vitae cumque vero, harum maiores inventore rem?</p>
 
-
-        </section>
+        </div>
     )
 }
 
-export default Hero
+export default Portfolio

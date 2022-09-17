@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+.footer {
+    max-width: 100vw;
+    //min-height: 70vh;
+    background: linear-gradient(180deg, #32022e 0%, #1d011b 100%);
+    //margin-top: -1px;
+    color: white;
+    font-family: $primary-font;
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: -1px;
+    display: flex;
+    justify-content: space-between;
+    //border: 2px solid red;
+
+    div{
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        color : grey;
+    }
+
+    .socials{
+
+        .icon{
+            color : $golden-color;
+            font-size: 5vw;
+            margin: 0 5px;
+        }
+    }
+}

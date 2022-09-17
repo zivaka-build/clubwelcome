@@ -1,15 +1,18 @@
+@import '../../index.scss';
+
 .hero {
 
     max-width: 100vw;
     height: 50vh;
-    background: linear-gradient(180deg, #8E0084 0%, rgb(64, 1, 59) 100%);
+    background: linear-gradient(180deg, #8E0084 0%, $dark-purple 100%);
     // filter: blur(10px);
     // border: 2px solid red;
 
     .swiper {
         width: 100%;
         // margin-right: auto;
-        height: 70%;
+        height: 78%;
+        //padding-bottom: 40px;
         // position: relative;
         // bottom: 4vh;
         // padding-top: 50px;
@@ -37,8 +40,8 @@
 
     .swiper-slide-active {
         // border: 3px solid orange;
-        height: 80%;
-        width: 200%;
+        height: 100%;
+        //width: 200%;
         opacity: 100%;
 
         background-color: transparent;
