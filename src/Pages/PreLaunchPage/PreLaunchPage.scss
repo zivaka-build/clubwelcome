@@ -1,5 +1,5 @@
 .pre-launch {
-   background-color: rgb(255, 250, 250);
+   background-color: snow;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -7,11 +7,11 @@
    height: 100vh;
    padding: 5%;
 
-   .content-1,
-   .content-2,
-   .image {
-    //  border: 1px solid black;
-   }
+   // .content-1,
+   // .content-2,
+   // .image {
+   //  //  border: 1px solid black;
+   // }
 
    .content-1,
    .content-2 {
