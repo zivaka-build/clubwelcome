@@ -79,17 +79,17 @@ const PreLaunchPage = () => {
             </section>
 
             <section className='image'>
-                <img src={Timer} alt="pre launch announcement" />
+            <img src="https://i.ibb.co/FYM9D6R/Timer.jpg" alt="Pre launch announcement"/>
             </section>
 
             {width <= 1000
                 &&
                 <section className='content-2'>
 
-<p>Rupali Arcade, NS Road,</p>
-                        <p> Chinsurah, Hoogly -712101</p>
-                        <br />
-                        <p>9163308035 / 869726385</p>
+                    <p>Rupali Arcade, NS Road,</p>
+                    <p> Chinsurah, Hoogly -712101</p>
+                    <br />
+                    <p>9163308035 / 869726385</p>
                 </section>}
         </div>
     )
