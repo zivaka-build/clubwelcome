@@ -13,19 +13,19 @@ import 'swiper/scss/scrollbar';
 import 'swiper/scss/autoplay';
 import 'swiper/scss/zoom';
 import 'swiper/css/effect-coverflow';
-import Car2 from '../../assets/images/car2.jpeg';
-import Car1 from '../../assets/images/car1.jpeg';
-import Car3 from '../../assets/images/car3.jpeg';
-import Car4 from '../../assets/images/car4.jpeg';
 
-const Hero = ({open , setOpen}) => {
+const Hero = ({ open, setOpen }) => {
 
-    const images = [Car1 , Car2 , Car3 , Car4];
+    const images = ['https://i.ibb.co/wQL4zdx/Carousel1.jpg',
+        'https://i.ibb.co/hBsSj9v/Carousel2.jpg',
+        'https://i.ibb.co/ydQyNr4/Carousel3.jpg',
+        'https://i.ibb.co/9nNpsNF/Carousel4.jpg'];
 
+   
     return (
         <section className='hero'>
 
-            <Header open={open} setOpen={setOpen}/>
+            <Header open={open} setOpen={setOpen} />
             <br />
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
@@ -36,7 +36,7 @@ const Hero = ({open , setOpen}) => {
                     clickable: true,
                     dynamicBullets: true,
                     dynamicMainBullets: 3,
-                   
+
                 }}
                 //scrollbar={{ draggable: true }}
                 //autoplay={{ delay: 2000, disableOnInteraction: false, }}

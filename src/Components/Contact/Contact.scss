@@ -1,0 +1,67 @@
+@import '../../index.scss';
+
+.contact {
+    max-width: 100vw;
+    // min-height: 70vh;
+    background: linear-gradient(180deg, $dark-purple 0%, $dark-purple 100%);
+    margin-top: -1px;
+    color: white;
+    font-family: $primary-font;
+    padding-top: 60px;
+    padding-bottom: 10px;
+   // border: 2px solid white;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h1 {
+            font-size: 8vw;
+            font-weight: 400;
+        }
+
+        img {
+            display: block;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            // border: 1px solid red
+        }
+    }
+
+    img {
+        display: block;
+        width: 70%;
+        height: 150px;
+        margin: 30px auto;
+        border-radius: 20px;
+    }
+
+    .content {
+
+        p {
+            width: 80%;
+            text-align: left;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        .icons {
+            width: 80%;
+            margin: auto;
+            //border: 1px solid white;
+
+            .icon {
+                color: $golden-color;
+                font-size: 5vw;
+                margin-right : 15px;
+                cursor : pointer
+            }
+        }
+    }
+
+}
