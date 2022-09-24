@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from '../../assets/images/carousel.png';
 import './Hero.scss';
 import Header from '../Header/Header';
@@ -13,6 +13,7 @@ import 'swiper/scss/scrollbar';
 import 'swiper/scss/autoplay';
 import 'swiper/scss/zoom';
 import 'swiper/css/effect-coverflow';
+import Menu from '../Menu/Menu';
 
 const Hero = ({ open, setOpen }) => {
 
@@ -21,17 +22,36 @@ const Hero = ({ open, setOpen }) => {
         'https://i.ibb.co/ydQyNr4/Carousel3.jpg',
         'https://i.ibb.co/9nNpsNF/Carousel4.jpg'];
 
-   
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
+
     return (
         <section className='hero'>
 
             <Header open={open} setOpen={setOpen} />
+
+            {
+                width > 992
+                &&
+
+                <>
+                    <br />
+                    <br />
+                    <Menu />
+                    <br />
+                </>
+
+            }
+
             <br />
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
                 spaceBetween={-5}
                 slidesPerView={2}
-
+                navigation={ width > 992 ? true : false }
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
@@ -39,10 +59,10 @@ const Hero = ({ open, setOpen }) => {
 
                 }}
                 //scrollbar={{ draggable: true }}
-                //autoplay={{ delay: 2000, disableOnInteraction: false, }}
+                autoplay={{ delay: 4000, disableOnInteraction: false, }}
                 effect='coverflow'
                 loop={true}
-                grabCursor={true}
+                grabCursor={width <= 992 && true}
                 centeredSlides={true}
                 coverflowEffect={{
                     rotate: 10,

@@ -7,7 +7,8 @@
     margin-top: -1px;
     color: white;
     font-family: $primary-font;
-    padding-top: 70px;
+    padding-top: 40px;
+    border: 3px solid pink;
 
     .heading {
         display: flex;
@@ -23,7 +24,7 @@
         img {
             display: block;
             width: auto;
-            height:auto;
+            height: auto;
             object-fit: cover;
             margin-top: 5px;
             margin-bottom: 10px;
@@ -46,5 +47,33 @@
         width: 60%;
         height: 50%;
         border-radius: 20px;
+    }
+}
+
+@media (min-width : 992px) {
+
+    .about {
+
+        .heading {
+
+            h1 {
+                font-size: 50px;
+                margin: 0;
+            }
+
+            img {
+                margin-top: 0px;
+            }
+        }
+
+        p {
+            width: 40%;
+            font-size: 25px;
+        }
+
+        .image {
+            width: 400px;
+            height: 300px;
+        }
     }
 }

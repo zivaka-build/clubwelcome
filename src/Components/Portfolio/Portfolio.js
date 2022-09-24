@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Leaf from '../../assets/images/leaf.png';
 import './Portfolio.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,6 +20,12 @@ import p4 from '../../assets/images/p4.jpg';
 const Portfolio = () => {
 
     const images = [p1, p2, p3, p4];
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
+
 
     return (
         <div className='portfolio'>
@@ -33,7 +39,7 @@ const Portfolio = () => {
                 modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
                 spaceBetween={25}
                 slidesPerView={2}
-
+                navigation={width > 992 && true}
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,

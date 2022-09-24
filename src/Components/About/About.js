@@ -1,6 +1,7 @@
 import React from 'react'
 import Leaf from '../../assets/images/leaf.png';
 import Carousel from '../../assets/images/carousel.png';
+import {Container} from 'react-bootstrap'
 import './About.scss';
 
 const About = () => {

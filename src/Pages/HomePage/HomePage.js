@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import About from '../../Components/About/About';
 import Contact from '../../Components/Contact/Contact';
 import Footer from '../../Components/Footer/Footer';
@@ -11,13 +11,17 @@ import './HomePage.scss';
 const HomePage = () => {
 
     const [open, setOpen] = useState(false);
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
 
     return (
         <>
             <div className={open ? 'open' : 'home'} >
                 {/* <Header /> */}
                 <Hero open={open} setOpen={setOpen} />
-
                 <About />
                 <Services />
                 <Portfolio />
@@ -25,7 +29,9 @@ const HomePage = () => {
                 <Footer />
             </div>
 
-            <Sidebar open={open} setOpen={setOpen} />
+            {width <= 992
+                &&
+                <Sidebar open={open} setOpen={setOpen} />}
 
 
         </>

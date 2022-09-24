@@ -1,34 +1,66 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsDash } from 'react-icons/bs';
 import Logo from '../../assets/images/logo.png';
 import './Header.scss';
-import Sidebar from '../Sidebar/Sidebar';
+import { Container, Row, Col } from 'react-bootstrap';
 
-const Header = ({open , setOpen}) => {
+const Header = ({ open, setOpen }) => {
+
+  const [width, setWidth] = useState(0)
+
+  useEffect(() => {
+    setWidth(window.innerWidth)
+  }, [])
 
   return (
-    <nav className='header'>
+    <Container fluid className='header'>
 
-      <section className='menubar'>
-        <GiHamburgerMenu className='icon' onClick={() => setOpen(!open)} />
-      </section>
+      {width <= 992
+        ?
+        <Row className='row' >
 
-      <section className='content'>
+          <Col xs={2} className='menubar'>
+            <GiHamburgerMenu className='icon' onClick={() => setOpen(!open)} />
+          </Col>
 
-        <img src={Logo} alt="club-welcome logo" />
+          <Col xs={4} className='content'>
+            <img src={Logo} alt="club-welcome logo" />
+          </Col>
 
-        <div className='name'>
-          <p>CLUB WELCOME</p>
-          <div className='tagline'>
-            <BsDash className='icon' style={{ marginRight: '-2.5px' }} />
-            <span>AN IMPERIAL DESTINATION TO ENJOY</span>
-            <BsDash className='icon' style={{ marginLeft: '-2.5px' }} />
-          </div>
-        </div>
-      </section>
+          <Col xs={6} className='name'>
 
-    </nav>
+            <p>CLUB WELCOME</p>
+            <div className='tagline'>
+              <BsDash className='icon' style={{ marginRight: '-2.5px' }} />
+              <span>AN IMPERIAL DESTINATION TO ENJOY</span>
+              <BsDash className='icon' style={{ marginLeft: '-2.5px' }} />
+            </div>
+
+          </Col>
+
+        </Row>
+        :
+        <Row className='row'>
+
+          <Col  className='content'>
+            <img src={Logo} alt="club-welcome logo" />
+          </Col>
+
+          <Col  className='name'>
+
+            <p>CLUB WELCOME</p>
+            <div className='tagline'>
+              <BsDash className='icon' style={{ marginRight: '-2.5px' }} />
+              <span>AN IMPERIAL DESTINATION TO ENJOY</span>
+              <BsDash className='icon' style={{ marginLeft: '-2.5px' }} />
+            </div>
+
+          </Col>
+        </Row>
+      }
+
+    </Container>
   )
 }
 

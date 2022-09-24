@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsDash } from 'react-icons/bs';
 import Logo from '../../assets/images/logo.png';
 import { AiFillHome } from 'react-icons/ai';
@@ -9,6 +9,13 @@ import { ImCross } from 'react-icons/im';
 import './Sidebar.scss';
 
 const Sidebar = ({ open, setOpen }) => {
+
+    const [width, setWidth] = useState(0)
+
+    useEffect(() => {
+        setWidth(window.innerWidth)
+    }, [])
+
     return (
         <section className={open ? 'sidebar-open' : 'sidebar-close'}>
 
