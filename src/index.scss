@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
+$golden-color : #B29F69;
+$blue-color : #072557;
+$purple-color : #8E0084;
+$dark-purple : #32022e;
+$primary-font : 'barlow-condensed';
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -8,6 +14,7 @@ body {
     max-width: 100vw;
     height: 100vh;
     scrollbar-width: 0px;
+    background-color: $purple-color;
 
     &::-webkit-scrollbar {
         display: none;
@@ -21,9 +28,3 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-$golden-color : #B29F69;
-$blue-color : #072557;
-$purple-color : #8E0084;
-$dark-purple : #32022e;
-$primary-font : 'barlow-condensed'

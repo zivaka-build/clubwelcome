@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { BsDash } from 'react-icons/bs';
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo1.png';
 import './Header.scss';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Navbar } from 'react-bootstrap';
 
 const Header = ({ open, setOpen }) => {
 
@@ -14,7 +14,7 @@ const Header = ({ open, setOpen }) => {
   }, [])
 
   return (
-    <Container fluid className='header'>
+    <Container fluid className='header' id='header'>
 
       {width <= 992
         ?
@@ -25,7 +25,9 @@ const Header = ({ open, setOpen }) => {
           </Col>
 
           <Col xs={4} className='content'>
-            <img src={Logo} alt="club-welcome logo" />
+            <a href="#home">
+              <img src={Logo} alt="club-welcome logo" />
+            </a>
           </Col>
 
           <Col xs={6} className='name'>
@@ -43,11 +45,13 @@ const Header = ({ open, setOpen }) => {
         :
         <Row className='row'>
 
-          <Col  className='content'>
-            <img src={Logo} alt="club-welcome logo" />
+          <Col xs={6} className='content'>
+          <a href="#home">
+              <img src={Logo} alt="club-welcome logo" />
+            </a>
           </Col>
 
-          <Col  className='name'>
+          <Col xs={6} className='name'>
 
             <p>CLUB WELCOME</p>
             <div className='tagline'>

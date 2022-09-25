@@ -29,10 +29,8 @@ const Hero = ({ open, setOpen }) => {
     }, [])
 
     return (
-        <section className='hero'>
-
-            <Header open={open} setOpen={setOpen} />
-
+        <section className='hero' id='home'>
+            {/* <Header open={open} setOpen={setOpen} /> */}
             {
                 width > 992
                 &&
@@ -40,6 +38,10 @@ const Hero = ({ open, setOpen }) => {
                 <>
                     <br />
                     <br />
+                    {/* <br/>
+                    <br/>
+                    <br/>
+                    <br/> */}
                     <Menu />
                     <br />
                 </>
@@ -51,7 +53,7 @@ const Hero = ({ open, setOpen }) => {
                 modules={[Navigation, Pagination, Scrollbar, Autoplay, EffectCoverflow]}
                 spaceBetween={-5}
                 slidesPerView={2}
-                navigation={ width > 992 ? true : false }
+                navigation={width > 992 ? true : false}
                 pagination={{
                     clickable: true,
                     dynamicBullets: true,
@@ -59,7 +61,8 @@ const Hero = ({ open, setOpen }) => {
 
                 }}
                 //scrollbar={{ draggable: true }}
-                autoplay={{ delay: 4000, disableOnInteraction: false, }}
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                speed={1000}
                 effect='coverflow'
                 loop={true}
                 grabCursor={width <= 992 && true}

@@ -19,6 +19,7 @@
         h1 {
             font-size: 8vw;
             font-weight: 400;
+            margin: 0;
         }
 
         img {
@@ -26,7 +27,6 @@
             width: auto;
             height: auto;
             object-fit: cover;
-            margin-top: 5px;
             margin-bottom: 10px;
             //border : 1px solid white
         }
@@ -58,12 +58,8 @@
 
             h1 {
                 font-size: 50px;
-                margin: 0;
             }
 
-            img {
-                margin-top: 0px;
-            }
         }
 
         p {

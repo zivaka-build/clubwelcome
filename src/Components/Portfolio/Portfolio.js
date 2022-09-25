@@ -28,7 +28,7 @@ const Portfolio = () => {
 
 
     return (
-        <div className='portfolio'>
+        <div className='portfolio' id='portfolio'>
 
             <div className='heading'>
                 <h1>Portfolio</h1>
@@ -40,12 +40,12 @@ const Portfolio = () => {
                 spaceBetween={25}
                 slidesPerView={2}
                 navigation={width > 992 && true}
-                pagination={{
-                    clickable: true,
-                    dynamicBullets: true,
-                    dynamicMainBullets: 3,
+                // pagination={{
+                //     clickable: true,
+                //     dynamicBullets: true,
+                //     dynamicMainBullets: 3,
 
-                }}
+                // }}
                 //scrollbar={{ draggable: true }}
                 //autoplay={{ delay: 2000, disableOnInteraction: false, }}
                 effect='coverflow'

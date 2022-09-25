@@ -20,73 +20,77 @@ const Services = () => {
     }
 
     return (
-        <section className='services'>
+        <section className='services' id='services'>
 
             <div className='heading'>
                 <h1>Services</h1>
                 <img src={Leaf} alt=" a design" />
             </div>
 
-        
-            <ReactCardFlip isFlipped={flipped1}>
-                <div className='card' >
-                    <img src={Carousel} alt="" />
-                    <button onClick={() => {
-                        setFlipped1(true)
-                        setFlipped2(false)
-                        setFlipped3(false)
-                    }}>.</button>
-                    <div className='logo'>
-                        <img src={Logo} alt="logo" />
+
+            <section className='cards'>
+
+                <ReactCardFlip isFlipped={flipped1} className='card-container'>
+                    <div className='card' >
+                        <img src={Carousel} alt="" />
+                        <button onClick={() => {
+                            setFlipped1(true)
+                            setFlipped2(false)
+                            setFlipped3(false)
+                        }}>.</button>
+                        <div className='logo'>
+                            <img src={Logo} alt="logo" />
+                        </div>
                     </div>
-                </div>
 
-                <div className='card back'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis iusto assumenda a velit ab, ratione error voluptate voluptas animi!</p>
-                    <button onClick={() => {
-                        setFlipped1(false)
+                    <div className='card back'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis iusto assumenda a velit ab, ratione error voluptate voluptas animi!</p>
+                        <button onClick={() => {
+                            setFlipped1(false)
 
-                    }}>.</button>
-                </div>
-            </ReactCardFlip>
-
-            <ReactCardFlip isFlipped={flipped2}>
-                <div className='card'>
-                    <img src={Carousel} alt="" />
-                    <button onClick={() => {
-                        setFlipped2(true)
-                        setFlipped1(false)
-                        setFlipped3(false)
-                    }}>.</button>
-                    <div className='logo'>
-                        <img src={Logo} alt="logo" />
+                        }}>.</button>
                     </div>
-                </div>
+                </ReactCardFlip>
 
-                <div className='card back'>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab culpa laudantium facere placeat quibusdam id alias, excepturi architecto quisquam!</p>
-                    <button onClick={() => setFlipped2(false)}>.</button>
-                </div>
-            </ReactCardFlip>
-
-            <ReactCardFlip isFlipped={flipped3}>
-                <div className='card'>
-                    <img src={Carousel} alt="" />
-                    <button onClick={() => {
-                        setFlipped3(true)
-                        setFlipped1(false)
-                        setFlipped2(false)
-                    }}>.</button>
-                    <div className='logo'>
-                        <img src={Logo} alt="logo" />
+                <ReactCardFlip isFlipped={flipped2} className='card-container'>
+                    <div className='card'>
+                        <img src={Carousel} alt="" />
+                        <button onClick={() => {
+                            setFlipped2(true)
+                            setFlipped1(false)
+                            setFlipped3(false)
+                        }}>.</button>
+                        <div className='logo'>
+                            <img src={Logo} alt="logo" />
+                        </div>
                     </div>
-                </div>
 
-                <div className='card back'>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab voluptates natus quisquam voluptatibus hic voluptate harum aspernatur laborum iste consequatur.</p>
-                    <button onClick={() => setFlipped3(false)}>.</button>
-                </div>
-            </ReactCardFlip>
+                    <div className='card back'>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab culpa laudantium facere placeat quibusdam id alias, excepturi architecto quisquam!</p>
+                        <button onClick={() => setFlipped2(false)}>.</button>
+                    </div>
+                </ReactCardFlip>
+
+                <ReactCardFlip isFlipped={flipped3} className='card-container'>
+                    <div className='card'>
+                        <img src={Carousel} alt="" />
+                        <button onClick={() => {
+                            setFlipped3(true)
+                            setFlipped1(false)
+                            setFlipped2(false)
+                        }}>.</button>
+                        <div className='logo'>
+                            <img src={Logo} alt="logo" />
+                        </div>
+                    </div>
+
+                    <div className='card back'>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab voluptates natus quisquam voluptatibus hic voluptate harum aspernatur laborum iste consequatur.</p>
+                        <button onClick={() => setFlipped3(false)}>.</button>
+                    </div>
+                </ReactCardFlip>
+
+            </section>
 
 
         </section>

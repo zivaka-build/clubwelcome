@@ -3,15 +3,23 @@
 .header {
     max-width: 100vw;
     height: 60px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0vh;
+    left: 0;
+    z-index: 9999;
+    border-radius: 0 0 20px 20px;
+    background-color: white;
     // display: flex;
     // justify-content: space-between;
     //padding: 5px;
-    border-radius: 0 0 20px 20px;
-    background-color: white;
-    // border: 2px solid red;
+    border: 2px solid red;
 
     .row {
         height: 100%;
+        max-width: 100vw;
+        // border: 2px solid red;
+        border-radius: 0 0 20px 20px;
 
         .menubar {
             // flex: 0.3;
@@ -35,15 +43,19 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            border: 1px solid red;
+            // border: 1px solid red;
 
-            img {
-                // flex: 0.2;
-                display: block;
-                // width: auto;
-                height: 90%;
-                // border: 1px solid red;
+            a {
+                height: 100%;
+                img {
+                    // flex: 0.2;
+                    display: block;
+                    // width: auto;
+                    height: 120%;
+                    //border: 1px solid red;
+                }
             }
+
 
         }
 
@@ -56,7 +68,7 @@
             justify-content: center;
             color: $blue-color;
             text-align: center;
-             border: 1px solid red;
+            //border: 1px solid red;
 
             p {
                 font-size: 4vw;
@@ -88,27 +100,20 @@
 
 }
 
+// .header {
+//     filter: blur(0px);
+//     transition: all 0.5s ease-in;
+// }
+
+// .blur {
+//     filter: blur(5px);
+//     transition: all 0.5s ease-in;
+// }
+
 @media (min-width : 576px) {
     .header {
         height: 90px;
         border-radius: 0 0 25px 25px;
-        // .row {
-
-        //     .name {
-        //         text-align: left;
-
-        //         p {
-        //             font-size: 30px;
-        //             letter-spacing: 2px;
-        //         }
-
-        //         .tagline {
-        //             font-size: 13px;
-        //             text-align: left;
-        //             margin-top: -5px;
-        //         }
-        //     }
-        // }
     }
 }
 
@@ -128,12 +133,12 @@
                 text-align: left;
 
                 p {
-                    font-size: 30px;
-                    letter-spacing: 2px;
+                    font-size: 28px;
+                    letter-spacing: 1px;
                 }
 
                 .tagline {
-                    font-size: 13px;
+                    font-size: 12px;
                     text-align: left;
                     margin-top: -5px;
                 }

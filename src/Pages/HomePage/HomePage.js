@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import About from '../../Components/About/About';
 import Contact from '../../Components/Contact/Contact';
 import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/Header/Header';
 import Hero from '../../Components/Hero/Hero';
 import Portfolio from '../../Components/Portfolio/Portfolio';
 import Services from '../../Components/Services/Services';
@@ -20,7 +21,7 @@ const HomePage = () => {
     return (
         <>
             <div className={open ? 'open' : 'home'} >
-                {/* <Header /> */}
+                <Header open={open} setOpen={setOpen} />
                 <Hero open={open} setOpen={setOpen} />
                 <About />
                 <Services />

@@ -14,19 +14,38 @@
     justify-content: space-between;
     //border: 2px solid red;
 
-    div{
+    div {
         font-size: 10px;
         font-weight: 400;
         letter-spacing: 1px;
-        color : grey;
+        color: grey;
     }
 
-    .socials{
+    .socials {
 
-        .icon{
-            color : $golden-color;
+        .icon {
+            color: $golden-color;
             font-size: 5vw;
             margin: 0 5px;
         }
     }
+}
+
+@media (min-width : 992px) {
+
+    .footer {
+
+        div{
+            font-size: 15px;
+        }
+
+        .socials {
+
+            .icon {
+                font-size: 30px
+            }
+        }
+
+    }
+
 }

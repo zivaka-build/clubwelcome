@@ -7,9 +7,9 @@
     margin-top: -1px;
     color: white;
     font-family: $primary-font;
-    padding-top: 60px;
+    // padding-top: 40px;
     padding-bottom: 10px;
-   // border: 2px solid white;
+    border: 2px solid white;
 
     .heading {
         display: flex;
@@ -20,6 +20,7 @@
         h1 {
             font-size: 8vw;
             font-weight: 400;
+            margin: 0;
         }
 
         img {
@@ -27,21 +28,25 @@
             width: auto;
             height: auto;
             object-fit: cover;
-            margin-top: 5px;
             margin-bottom: 10px;
             // border: 1px solid red
         }
     }
 
-    img {
-        display: block;
-        width: 70%;
-        height: 150px;
-        margin: 30px auto;
-        border-radius: 20px;
-    }
 
     .content {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
+
+        img {
+            display: block;
+            width: 70%;
+            height: 150px;
+            margin: 30px auto;
+            border-radius: 20px;
+        }
+
 
         p {
             width: 80%;
@@ -53,15 +58,85 @@
         .icons {
             width: 80%;
             margin: auto;
-            //border: 1px solid white;
+            border: 1px solid white;
 
             .icon {
                 color: $golden-color;
                 font-size: 5vw;
-                margin-right : 15px;
-                cursor : pointer
+                margin-right: 15px;
+                cursor: pointer
             }
         }
     }
 
+}
+
+@media (min-width : 768px) {
+
+    .contact {
+
+        .heading {
+            h1 {
+                font-size: 50px;
+            }
+        }
+
+        .content {
+            flex-direction: row-reverse;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+
+            img {
+
+                display: block;
+                width: 300px;
+                height: 200px;
+                border: 2px solid green;
+            }
+
+            .info {
+                flex: 0.7;
+                border: 2px solid green;
+
+                p {
+                    width: 100%;
+                    font-family: Barlow Semi Condensed;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                }
+
+                .icons {
+                    width : 100%;
+                    margin-top: 20px;
+                    .icon {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width : 1250px) {
+
+    .contact {
+
+
+        .content {
+           
+
+            .info {          
+
+                p {
+                    width: 70%;
+                }
+
+                .icons{
+                    width : 70%
+                }
+
+            }
+        }
+    }
 }

@@ -7,23 +7,33 @@ const Menu = () => {
         <Container className='menu'>
             <Row className='row'>
                 <Col className='col'>
-                    <button>Home</button>
+                    <a href="#home">
+                        <button>Home</button>
+                    </a>
                 </Col>
 
                 <Col >
-                    <button>About Us</button>
+                    <a href="#about">
+                        <button>About Us</button>
+                    </a>
                 </Col>
 
                 <Col >
-                    <button>Services</button>
+                    <a href="#services">
+                        <button>Services</button>
+                    </a>
                 </Col>
 
                 <Col>
+                <a href="#portfolio">
                     <button>Portfolio</button>
+                </a>
                 </Col>
 
                 <Col >
+                <a href="#contact">
                     <button>Contact</button>
+                </a>
                 </Col>
             </Row>
         </Container>
