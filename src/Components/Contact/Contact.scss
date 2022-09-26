@@ -9,7 +9,7 @@
     font-family: $primary-font;
     // padding-top: 40px;
     padding-bottom: 10px;
-    border: 2px solid white;
+   // border: 2px solid white;
 
     .heading {
         display: flex;
@@ -37,7 +37,7 @@
     .content {
         display: flex;
         flex-direction: column;
-        border: 2px solid red;
+        //border: 2px solid red;
 
         img {
             display: block;
@@ -58,7 +58,7 @@
         .icons {
             width: 80%;
             margin: auto;
-            border: 1px solid white;
+            //border: 1px solid white;
 
             .icon {
                 color: $golden-color;
@@ -92,12 +92,12 @@
                 display: block;
                 width: 300px;
                 height: 200px;
-                border: 2px solid green;
+               // border: 2px solid green;
             }
 
             .info {
                 flex: 0.7;
-                border: 2px solid green;
+                //border: 2px solid green;
 
                 p {
                     width: 100%;
