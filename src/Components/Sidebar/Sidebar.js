@@ -5,6 +5,7 @@ import { AiFillHome } from 'react-icons/ai';
 import { BsFillPeopleFill, BsFillTelephoneFill } from 'react-icons/bs';
 import { MdOutlineMiscellaneousServices } from 'react-icons/md'
 import { ImCross } from 'react-icons/im';
+import { Link } from 'react-scroll'
 
 import './Sidebar.scss';
 
@@ -25,33 +26,27 @@ const Sidebar = ({ open, setOpen }) => {
 
                 <div>
                     <AiFillHome className='icon' />
-                    <span>Home</span>
+                    <Link to="home" offset={-100} onClick={()=>setOpen(false)}>Home</Link>
                 </div>
 
                 <div>
                     <BsFillPeopleFill className='icon' />
-                    <span>About Use</span>
+                    <Link to='about' offset={-50} onClick={()=>setOpen(false)}>About Us</Link>
                 </div>
 
                 <div>
                     <MdOutlineMiscellaneousServices className='icon' />
-                    <span>Services</span>
+                    <Link to='services' onClick={()=>setOpen(false)}>Services</Link>
                 </div>
 
                 <div>
                     <BsFillTelephoneFill className='icon' />
-                    <span>Contact</span>
+                    <Link to='contact' onClick={()=>setOpen(false)}>Contact</Link>
                 </div>
             </div>
 
             <div className='company'>
                 <img src={Logo} alt="company logo" />
-                {/* <p>CLUB WELCOME</p>
-                <div className='tagline'>
-                    <BsDash className='icon' style={{ marginRight: '-2.5px' }} />
-                    <span>AN IMPERIAL DESTINATION TO ENJOY</span>
-                    <BsDash className='icon' style={{ marginLeft: '-2.5px' }} />
-                </div> */}
             </div>
         </section>
     )

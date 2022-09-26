@@ -1,33 +1,34 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import './Menu.scss';
+import { Link } from 'react-scroll'
 
 const Menu = () => {
     return (
         <Container className='menu'>
-            <Row className='row'>
-                <Col className='col'>
-                    <a href="#home">
+            <Row className='row'> 
+                <Col className='col'> 
+                    <Link to="home" offset={-70}>
                         <button>Home</button>
-                    </a>
+                    </Link>
                 </Col>
 
                 <Col >
-                    <a href="#about">
+                    <Link to="about" offset={-70}>
                         <button>About Us</button>
-                    </a>
+                    </Link>
                 </Col>
 
                 <Col >
-                    <a href="#services">
+                    <Link to="services" offset={-50}>
                         <button>Services</button>
-                    </a>
+                    </Link>
                 </Col>
 
                 <Col>
-                <a href="#portfolio">
+                <Link to="portfolio" offset={-70}>
                     <button>Portfolio</button>
-                </a>
+                </Link>
                 </Col>
 
                 <Col >

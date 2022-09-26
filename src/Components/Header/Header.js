@@ -4,6 +4,7 @@ import { BsDash } from 'react-icons/bs';
 import Logo from '../../assets/images/logo1.png';
 import './Header.scss';
 import { Container, Row, Col, Navbar } from 'react-bootstrap';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 const Header = ({ open, setOpen }) => {
 
@@ -25,9 +26,9 @@ const Header = ({ open, setOpen }) => {
           </Col>
 
           <Col xs={4} className='content'>
-            <a href="#home">
+            <Link to="home" offset={-80}>
               <img src={Logo} alt="club-welcome logo" />
-            </a>
+            </Link>
           </Col>
 
           <Col xs={6} className='name'>
@@ -46,9 +47,9 @@ const Header = ({ open, setOpen }) => {
         <Row className='row'>
 
           <Col xs={6} className='content'>
-          <a href="#home">
+          <Link to="home" offset={-200}>
               <img src={Logo} alt="club-welcome logo" />
-            </a>
+            </Link>
           </Col>
 
           <Col xs={6} className='name'>
