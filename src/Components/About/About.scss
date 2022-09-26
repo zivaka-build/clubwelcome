@@ -2,12 +2,13 @@
 
 .about {
     max-width: 100vw;
-    //min-height: 50vh;
+    height: content;
     background: linear-gradient(180deg, $dark-purple 0%, $dark-purple 100%);
     margin-top: -1px;
     color: white;
     font-family: $primary-font;
     padding-top: 40px;
+    padding-bottom: 2%;
     //border: 3px solid pink;
 
     .heading {
@@ -42,12 +43,12 @@
     }
 
     .sections {
-        //border: 2px solid red;
+       // border: 2px solid red;
 
         .section-1,
         .section-2 {
             margin: 10% 5%;
-           // border: 1px solid white;
+            //border: 1px solid white;
             display: flex;
             flex-direction: column;
             align-items: center;
