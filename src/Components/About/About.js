@@ -1,7 +1,7 @@
 import React from 'react'
 import Leaf from '../../assets/images/leaf.png';
 import Carousel from '../../assets/images/carousel.png';
-import {Container} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import './About.scss';
 
 const About = () => {
@@ -15,9 +15,26 @@ const About = () => {
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, doloribus ad ab ipsam dicta voluptatem quam iusto quis explicabo illum.</p>
 
-            <img src={Carousel} alt="about club welcome" className='image' />
+            <section className='sections'>
 
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ad, maiores voluptates quasi sequi voluptas architecto veritatis assumenda repellendus ea ipsa at eaque ut esse quaerat vero eos ullam reprehenderit!</p>
+                <div className='section-1'>
+                    <img src={Carousel} alt="about club welcome" className='image' />
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni assumenda facilis saepe qui! Libero?</p>
+                </div>
+
+                <div className='section-2'>
+
+                    <img src={Carousel} alt="about club welcome" className='image' />
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quasi suscipit atque et voluptatum laudantium.</p>
+
+                </div>
+
+            </section>
+
+
+
 
         </section>
     )

@@ -28,7 +28,6 @@ const HomePage = () => {
                 <Services />
                 <Portfolio />
                 <Contact />
-                <Form/>
                 <Footer />
             </div>
 

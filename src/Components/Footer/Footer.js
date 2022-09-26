@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai';
+import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
 import './Footer.scss';
 
 const Footer = () => {
@@ -11,8 +11,8 @@ const Footer = () => {
       </div>
 
       <div className='socials'>
-        <a href="https://facebook.com" target='_blank'><AiFillFacebook className='icon'/></a>
-        <a href="https://twitter.com" target='_blank'><AiFillTwitterSquare className='icon'/></a>
+        <a href="http://www.facebook.com/clubwelcomechisurah" target='_blank'><AiFillFacebook className='icon'/></a>
+        <a href="http://www.facebook.com/clubwelcomechisurah" target='_blank'><AiFillInstagram className='icon'/></a>
       </div>
     </section>
   )

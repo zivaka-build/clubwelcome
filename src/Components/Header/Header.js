@@ -25,13 +25,13 @@ const Header = ({ open, setOpen }) => {
             <GiHamburgerMenu className='icon' onClick={() => setOpen(!open)} />
           </Col>
 
-          <Col xs={4} className='content'>
+          {/* <Col xs={4} className='content'>
             <Link to="home" offset={-80}>
               <img src={Logo} alt="club-welcome logo" />
             </Link>
-          </Col>
+          </Col> */}
 
-          <Col xs={6} className='name'>
+          <Col xs={8} className='name'>
 
             <p>CLUB WELCOME</p>
             <div className='tagline'>
@@ -46,13 +46,13 @@ const Header = ({ open, setOpen }) => {
         :
         <Row className='row'>
 
-          <Col xs={6} className='content'>
+          <Col xs={5} className='content'>
           <Link to="home" offset={-200}>
               <img src={Logo} alt="club-welcome logo" />
             </Link>
           </Col>
 
-          <Col xs={6} className='name'>
+          <Col xs={7} className='name'>
 
             <p>CLUB WELCOME</p>
             <div className='tagline'>

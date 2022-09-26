@@ -1,6 +1,7 @@
 @import '../../index.scss';
 
-.sidebar-open , .sidebar-close{
+.sidebar-open,
+.sidebar-close {
 
     position: fixed;
     left: 0;
@@ -42,17 +43,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+       // border: 2px solid green;
 
         img {
             display: block;
-            width: 70%;
-            height: 70%;
+            width: 80%;
+            height: 100%;
+            //border: 2px solid green;
         }
 
     }
 }
 
-.sidebar-open{
+.sidebar-open {
     transform: translatex(0px);
     transition: all 0.8s ease-in-out;
 }

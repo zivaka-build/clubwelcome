@@ -4,6 +4,7 @@ import Logo from '../../assets/images/logo.png';
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillPeopleFill, BsFillTelephoneFill } from 'react-icons/bs';
 import { MdOutlineMiscellaneousServices } from 'react-icons/md'
+import { GoFileSubmodule } from 'react-icons/go';
 import { ImCross } from 'react-icons/im';
 import { Link } from 'react-scroll'
 
@@ -26,22 +27,27 @@ const Sidebar = ({ open, setOpen }) => {
 
                 <div>
                     <AiFillHome className='icon' />
-                    <Link to="home" offset={-100} onClick={()=>setOpen(false)}>Home</Link>
+                    <Link to="home" offset={-100} onClick={() => setOpen(false)}>Home</Link>
                 </div>
 
                 <div>
                     <BsFillPeopleFill className='icon' />
-                    <Link to='about' offset={-50} onClick={()=>setOpen(false)}>About Us</Link>
+                    <Link to='about' offset={-50} onClick={() => setOpen(false)}>About Us</Link>
                 </div>
 
                 <div>
                     <MdOutlineMiscellaneousServices className='icon' />
-                    <Link to='services' onClick={()=>setOpen(false)}>Services</Link>
+                    <Link to='services' onClick={() => setOpen(false)}>Services</Link>
+                </div>
+
+                <div>
+                    <GoFileSubmodule className='icon' />
+                    <Link to='portfolio' offset={-50} onClick={() => setOpen(false)}>Portfolio</Link>
                 </div>
 
                 <div>
                     <BsFillTelephoneFill className='icon' />
-                    <Link to='contact' onClick={()=>setOpen(false)}>Contact</Link>
+                    <Link to='contact' onClick={() => setOpen(false)}>Contact</Link>
                 </div>
             </div>
 
