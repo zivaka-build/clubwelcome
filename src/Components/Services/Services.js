@@ -64,22 +64,20 @@ const Services = () => {
                     </div>
 
                     <div className='card back'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab culpa laudantium facere placeat quibusdam id alias, excepturi architecto quisquam!</p>
+                        <p>Enjoy with your family and friends at King’s Crown Restuarent and Bar and savour our culinary delicacies and wide range of drinks.</p>
                         <button onClick={() => setFlipped2(false)}>.</button>
                     </div>
                 </ReactCardFlip>
 
                 <ReactCardFlip isFlipped={flipped3} className='card-container'>
                     <div className='card'>
-                        <img src={Carousel} alt="" />
+                        <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service3.png" alt="" />
                         <button onClick={() => {
                             setFlipped3(true)
                             setFlipped1(false)
                             setFlipped2(false)
                         }}>.</button>
-                        <div className='logo'>
-                            <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service3.png" alt="logo" />
-                        </div>
+                        
                     </div>
 
                     <div className='card back'>
