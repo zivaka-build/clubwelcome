@@ -83,7 +83,7 @@ const Services = () => {
                     </div>
 
                     <div className='card back'>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab voluptates natus quisquam voluptatibus hic voluptate harum aspernatur laborum iste consequatur.</p>
+                        <p>Elevate your special Day to a new height of Opulence and Royalty. Crystal Hall Banquet brings you never-before Experience, right at your doorsteps</p>
                         <button onClick={() => setFlipped3(false)}>.</button>
                     </div>
                 </ReactCardFlip>
