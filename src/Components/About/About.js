@@ -13,9 +13,9 @@ const About = () => {
                 <img src={Leaf} alt="a design" />
             </div>
 
-            <div>Experience the Good Life, now in Chinsurah. A multi facility Entertainment centre, serving a plethora of Indulgences, just for you, your family and friends.</div> 
+            <p>Experience the Good Life, now in Chinsurah. A multi facility Entertainment centre, serving a plethora of Indulgences, just for you, your family and friends.</p> 
 
-            <div>Our Mission is to bring world class entertainment and leisure to the Heritage city of Chinsurah</div>
+            <p>Our Mission is to bring world class entertainment and leisure to the Heritage city of Chinsurah</p>
 
             <section className='sections'>
 
