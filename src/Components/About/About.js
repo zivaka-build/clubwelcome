@@ -22,14 +22,14 @@ const About = () => {
                 <div className='section-1'>
                     <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about2.png" alt="about club welcome" className='image' />
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni assumenda facilis saepe qui! Libero?</p>
+                    <p>Club Welcome is your Window towards the King Size Life. Enjoy our lip smacking meals, party with your friends over a couple of drinks, make your events momorable and train your body and soul, all under one roof.</p>
                 </div>
 
                 <div className='section-2'>
 
                     <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about3.png" alt="about club welcome" className='image' />
 
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quasi suscipit atque et voluptatum laudantium.</p>
+                    <p>We are also commited towards brining more and more entertainment options. A Multiplex would open soon and keep watching for more news from us.</p>
 
                 </div>
 
