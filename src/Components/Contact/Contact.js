@@ -33,7 +33,7 @@ const Contact = () => {
             <div className='content'>
 
                 <a href="https://goo.gl/maps/UvB47UBAunCGqgkZ8" target="_blank">
-                    <img src="https://i.ibb.co/mNWwGsx/Map.png" alt="" />
+                    <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/gmap.png" alt="" />
                 </a>
 
                 <div className='info'>

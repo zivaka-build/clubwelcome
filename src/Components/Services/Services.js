@@ -39,7 +39,7 @@ const Services = () => {
                             setFlipped3(false)
                         }}>.</button>
                         <div className='logo'>
-                            <img src={Logo} alt="logo" />
+                            <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service1.png" alt="logo" />
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@ const Services = () => {
                             setFlipped3(false)
                         }}>.</button>
                         <div className='logo'>
-                            <img src={Logo} alt="logo" />
+                            <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service2.png" alt="logo" />
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ const Services = () => {
                             setFlipped2(false)
                         }}>.</button>
                         <div className='logo'>
-                            <img src={Logo} alt="logo" />
+                            <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service3.png" alt="logo" />
                         </div>
                     </div>
 
