@@ -37,8 +37,8 @@ const Contact = () => {
                 </a>
 
                 <div className='info'>
-                    <p>Rupali Arcade, NS Road,
-                        Chinsurah, Hoogly-712101</p>
+                    <p>Rupali Arcade, NS Road,Chinsurah,</p>
+                    <p>Hoogly-712101</p>
 
                     <div className='info-child'>
 
