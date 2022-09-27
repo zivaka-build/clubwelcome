@@ -44,7 +44,7 @@ const Services = () => {
                     </div>
 
                     <div className='card back'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum blanditiis iusto assumenda a velit ab, ratione error voluptate voluptas animi!</p>
+                        <p>Enrich your health and rejuvenate your energy at our world class Gym Facilities with Modern Equipment and Experienced Trainers, at Olympia Gym.</p>
                         <button onClick={() => {
                             setFlipped1(false)
 
