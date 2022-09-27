@@ -13,7 +13,9 @@ const About = () => {
                 <img src={Leaf} alt="a design" />
             </div>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, doloribus ad ab ipsam dicta voluptatem quam iusto quis explicabo illum.</p>
+            <div>Experience the Good Life, now in Chinsurah. A multi facility Entertainment centre, serving a plethora of Indulgences, just for you, your family and friends.</div> 
+
+            <div>Our Mission is to bring world class entertainment and leisure to the Heritage city of Chinsurah</div>
 
             <section className='sections'>
 
