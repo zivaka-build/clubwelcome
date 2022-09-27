@@ -18,14 +18,14 @@ const About = () => {
             <section className='sections'>
 
                 <div className='section-1'>
-                    <img src={Carousel} alt="about club welcome" className='image' />
+                    <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about2.png" alt="about club welcome" className='image' />
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique magni assumenda facilis saepe qui! Libero?</p>
                 </div>
 
                 <div className='section-2'>
 
-                    <img src={Carousel} alt="about club welcome" className='image' />
+                    <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about3.png" alt="about club welcome" className='image' />
 
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo quasi suscipit atque et voluptatum laudantium.</p>
 
