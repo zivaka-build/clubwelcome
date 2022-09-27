@@ -17,7 +17,7 @@ const About = () => {
             <section className='sections'>
 
                 <div className='section-2'>
-                    <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about2.png" alt="about club welcome" className='image' />
+                    <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/about1.png" alt="about club welcome" className='image' />
 
                     <p>Experience the Good Life, now in Chinsurah. A multi facility Entertainment centre, serving a plethora of Indulgences, just for you, your family and friends.Our Mission is to bring world class entertainment and leisure to the Heritage city of Chinsurah</p>
                 </div>
