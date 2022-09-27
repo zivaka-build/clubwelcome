@@ -32,15 +32,13 @@ const Services = () => {
 
                 <ReactCardFlip isFlipped={flipped1} className='card-container'>
                     <div className='card' >
-                        <img src={Carousel} alt="" />
+                        <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service1.png" alt="" />
                         <button onClick={() => {
                             setFlipped1(true)
                             setFlipped2(false)
                             setFlipped3(false)
                         }}>.</button>
-                        <div className='logo'>
-                            <img src="https://qbees-bucket.s3.us-west-2.amazonaws.com/welcome/service1.png" alt="logo" />
-                        </div>
+                        
                     </div>
 
                     <div className='card back'>
