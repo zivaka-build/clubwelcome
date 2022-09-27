@@ -72,7 +72,7 @@ const Portfolio = () => {
 
             </Swiper>
             <br />
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quaerat distinctio libero error vitae cumque vero, harum maiores inventore rem?</p>
+            <p>All images are copyrighted by Club Welcome Chinsurah. Unauthorized usage is prohibited. Some images are for representational purpose only.</p>
 
         </div>
     )
