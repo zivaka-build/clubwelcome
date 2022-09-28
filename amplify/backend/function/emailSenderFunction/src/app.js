@@ -93,10 +93,11 @@ app.post('/emailSender', function(req, res) {
   }
   transporter.sendMail(mail, (err, data) => {
     if (err) {
-      res.json({success: 'post call succeed!', url: req.url, body: err})
+      res.json({status: false, url: req.url, body: err.toString()})
     } else {
       res.json({
-        status: true
+        status: true,
+        message: "Enquiry Submitted. Our representative will connect you soon"
       })
     }
   })
