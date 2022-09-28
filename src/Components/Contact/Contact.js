@@ -17,9 +17,11 @@ const Contact = () => {
     const [phone, setPhone] = useState('')
     const [message, setMessage] = useState('')
     const [category, setCategory] = useState('')
+    const [phoneError , setPhoneError] = useState('')
 
     const handleForm = (e) => {
         e.preventDefault();
+        
         axios.post('https://nxourizw97.execute-api.us-west-2.amazonaws.com/staging/emailSender',
             {
                 name: name,
@@ -157,6 +159,7 @@ const Contact = () => {
                                 <Form.Label>Category</Form.Label>
                                 <Form.Control as="select"
                                     value={category}
+                                    required
                                     onChange={(e) => setCategory(e.target.value)}
                                 >
                                     <option value='null'>Select a Category</option>
@@ -186,10 +189,19 @@ const Contact = () => {
                     <label>Phone No.<em style={{ color: 'red' }}>*</em></label>
                     <input
                         className='form-control'
-                        type='number'
+                        type='text'
                         required
-                        onChange={(e) => setPhone(e.target.value)}
+                        onChange={(e) => {
+                           
+                            if(!/[0-9]/.test(e.target.value) && e.target.value != ''){
+                                setPhoneError('Please enter a valid 10 digit message')
+                            }else{
+                                setPhoneError('')
+                            }
+                            setPhone(e.target.value)
+                        }}
                     />
+                    {phoneError && <em style={{color : '#8E0084' , marginLeft : '10px', marginBottom : '10px'}}>{phoneError}</em>}
 
                     <label>Message<em style={{ color: 'red' }}>*</em></label>
                     <textarea
