@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/emailSender": {
+      "name": "/emailSender",
+      "lambdaFunction": "emailSenderFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
