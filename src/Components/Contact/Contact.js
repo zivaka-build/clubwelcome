@@ -6,7 +6,8 @@ import './Contact.scss';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 import Form from 'react-bootstrap/Form'
-
+import Swal from 'sweetalert2';
+import axios from 'axios';
 
 const Contact = () => {
 
@@ -17,9 +18,60 @@ const Contact = () => {
     const [message, setMessage] = useState('')
     const [category, setCategory] = useState('')
 
-    const handleForm=(e)=>{
+    const handleForm = (e) => {
         e.preventDefault();
-        
+        axios.post('https://nxourizw97.execute-api.us-west-2.amazonaws.com/staging/emailSender',
+            {
+                name: name,
+                email: email,
+                phone: phone,
+                message: message,
+                category: category
+            })
+            .then((res) => {
+                //console.log(res)
+                Swal.fire({
+                    icon: "success",
+                    title: "Success",
+                    text: res.data.message,
+                    showClass: {
+                        popup: "animate__animated animate__fadeInDown",
+                    },
+                    hideClass: {
+                        popup: "animate__animated animate__fadeOutUp",
+                    }
+                }).then(function () {
+                    setForm(false)
+                    setName('')
+                    setPhone('')
+                    setEmail('')
+                    setMessage('')
+                    setCategory('')
+                })
+            })
+            .catch((err) => {
+                //console.log(err)
+                setForm(false)
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    showClass: {
+                        popup: "animate__animated animate__fadeInDown",
+                    },
+                    hideClass: {
+                        popup: "animate__animated animate__fadeOutUp",
+                    },
+                    text: 'Could not send enquiry.'
+                })
+            })
+    }
+
+    const reset = () => {
+        setName('')
+        setPhone('')
+        setEmail('')
+        setMessage('')
+        setCategory('')
     }
 
     return (
@@ -66,7 +118,7 @@ const Contact = () => {
                         <div className='button'>
                             <Link to='form' offset={20}>
                                 <button onClick={() => {
-                                    setForm(!form)
+                                    setForm(true)
                                 }}>
                                     Enquire Now
                                 </button>
@@ -153,6 +205,7 @@ const Contact = () => {
                             onClick={(e) => {
                                 e.preventDefault()
                                 setForm(false)
+                                reset()
                             }}>Close</button>
                     </div>
 
