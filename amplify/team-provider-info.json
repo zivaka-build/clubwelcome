@@ -15,7 +15,7 @@
       "function": {
         "emailSenderFunction": {
           "deploymentBucketName": "amplify-amplifye466ff862ff94-staging-63712-deployment",
-          "s3Key": "amplify-builds/emailSenderFunction-30547641417973532b7a-build.zip"
+          "s3Key": "amplify-builds/emailSenderFunction-4e5a5644682b47624836-build.zip"
         }
       }
     }

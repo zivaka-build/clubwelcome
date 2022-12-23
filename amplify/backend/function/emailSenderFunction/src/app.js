@@ -58,10 +58,12 @@ app.post('/emailSender', function(req, res) {
     host: 'smtp.gmail.com', // Don’t forget to replace with the SMTP host of your provider
     port: 465,
     auth: {
-      user: "clubwelcomechinsurah@gmail.com",
-      pass: "txlmcmfoqaqmwxxr"
+      user: "hello@zivaka.com",
+      pass: "vohxnrqspwozglba"
     }
   }
+
+  
 
   var transporter = nodemailer.createTransport(transport)
   transporter.verify((error, success) => {
@@ -87,7 +89,7 @@ app.post('/emailSender', function(req, res) {
   var content = `name: ${name} \n phoneNo: ${phoneNo} \n email: ${email} \n message: ${message} `
   var mail = {
     from: name,
-    to: "clubwelcomechinsurah@gmail.com",  // Change to email address that you want to receive messages on
+    to: "bongpizza35@gmail.com",  // Change to email address that you want to receive messages on
     subject: subject ,
     text: content
   }
